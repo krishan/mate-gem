@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+command = "gem which #{ARGV[0]}"
+output = %x{#{command}}
+
+if output =~ /(\/.+)\/lib.+/
+  %x{mate #{$1}}
+else
+  puts "<#{command}> said:"
+  puts output
+end

@@ -1,0 +1,8 @@
+Inspect an installed (Ruby-)Gem using Textmate
+
+USAGE:
+mate-gem <name of gem>
+
+EXAMPLE:
+mate-gem active_resource
+# will open the installed active resource gem in textmate
